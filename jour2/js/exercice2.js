@@ -1,31 +1,28 @@
 /**Exercice 1 */
-function deletePropertyRollno(){
-    var student =  {
-        name : "David Rayy",
-        class : "VI",
-        rollno : 12  };
+function deletePropertyRollno() {
+    var student = {
+        name: "David Rayy",
+        class: "VI",
+        rollno: 12
+    };
     console.log(student);
     delete student.rollno;
     console.log(student);
 }
 
 /**Exercice 2 */
-function displayRecette(){
+function displayRecette() {
     var recetteSocca = {
-        nom : "socca",
+        nom: "socca",
         servi: 2,
-        ingredients :  ["Pois-Chiche", "Sel", "Poivre"]
+        ingredients: ["Pois-Chiche", "Sel", "Poivre"]
     };
-    console.log("nom: "+recetteSocca.nom);
-    console.log("servies: " +recetteSocca.servi);
-    console.log("ingredients: " +recetteSocca.ingredients);
+    console.log("nom: " + recetteSocca.nom);
+    console.log("servies: " + recetteSocca.servi);
+    console.log("ingredients: " + recetteSocca.ingredients);
 }
 
 /**Exercice 3 */
-function displayStateOfRead(){
-
-}
-
 class Book {
     constructor(title, author, isRead) {
         this.titre = title;
@@ -36,11 +33,11 @@ class Book {
 
 }
 
-function defineBooksState(){
+function defineBooksState() {
     var book1 = new Book("Cyrano de Bergerac", "Edmond Rostand", false);
-    var book2 = new Book("Les Fourberies de Scapin","Molière",true);
-    var book3 = new Book("Le Cid","Pierre Corneille",true);
-    var book4 = new Book("Les Chaises","Eugène Ionesco",true);
+    var book2 = new Book("Les Fourberies de Scapin", "Molière", true);
+    var book3 = new Book("Le Cid", "Pierre Corneille", true);
+    var book4 = new Book("Les Chaises", "Eugène Ionesco", true);
 
     console.log(book1.titre);
     console.log(book1.auteur);
@@ -57,9 +54,4 @@ function defineBooksState(){
     console.log(book4.titre);
     console.log(book4.auteur);
     console.log(book4.etat);
-
-    
 }
-
-
-
